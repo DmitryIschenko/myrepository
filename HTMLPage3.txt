@@ -1,0 +1,21 @@
+﻿<script type="text/javascript">
+var s = +prompt("Введите минимальное значение по фаренгейтам");
+var r = +prompt("Введите максильное значение по фаренгейтам");
+var h = +prompt("Введите шаг");
+var f;
+var g
+document.write("<TABLE border=2><td> F </td><td> C </td>" );
+while(s<=r)
+
+{
+ f = Math.round(5/9*(s-32));
+ document.write("<tr bgcolor=yellow><td>" +s+ "</td><td>" + f +  "</td></tr>");
+ s=s+h;
+
+ f = Math.round(5/9*(s-322));
+ document.write("<tr bgcolor=red><td>"+ s +"</td><td>"+ f + "</td></tr>");
+ s=s+h;
+}
+document.write("</TABLE>");
+</script>
+
